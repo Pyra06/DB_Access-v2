@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <Spinner
+        android:id="@+id/spn_Place"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@drawable/spinner_list_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="COUNTRY :"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/spn_Country"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="393dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/view_Selections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity=""
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/view_State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="STATE :"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/spn_State"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spn_State"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@drawable/spinner_list_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_Place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="PLACE :"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/spn_Place"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spn_Country"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@drawable/spinner_list_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_Place" />
+
+    <Button
+        android:id="@+id/btn_Select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Select"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_Place" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
